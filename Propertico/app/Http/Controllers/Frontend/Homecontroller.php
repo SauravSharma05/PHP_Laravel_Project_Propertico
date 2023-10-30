@@ -11,4 +11,14 @@ class Homecontroller extends Controller
     {
         return view('home');
     }
+    public function contact()
+    {
+        return view('contact');
+    }
+    public function agents()
+    {
+        return view('agents');
+    }
+
 }
+

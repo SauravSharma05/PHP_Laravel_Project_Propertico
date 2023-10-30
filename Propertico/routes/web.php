@@ -17,10 +17,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[Homecontroller::class,'index']);
 Route::get('/home',[Homecontroller::class,'index']);
+Route::get('/contact',[Homecontroller::class,'contact']);
+Route::get('/agents',[Homecontroller::class,'agents']);
 
-Route::get('/register',[Authcontroller::class,'index']);
+Route::get('/register',[Authcontroller::class,'index'])->middleware('guest');;
 Route::post('/register',[Authcontroller::class,'store']);
 
 
-Route::get('/login',[Authcontroller::class,'login']);
+Route::get('/login',[Authcontroller::class,'login'])->middleware('guest')->name('login');
 Route::post('/login',[Authcontroller::class,'validate_login']);
+
+Route::get('/logout',[AuthController::class,'logout']);
+

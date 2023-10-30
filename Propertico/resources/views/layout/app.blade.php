@@ -39,13 +39,19 @@
 <nav class="site-navigation position-relative text-right" role="navigation">
 <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
 <li><a href="/home" class="nav-link">Home</a></li>
-<li><a href="/properties" class="nav-link">Properties</a></li>
+<li><a href="#properties-section" class="nav-link">Properties</a></li>
 <li><a href="/agents" class="nav-link">Agents</a></li>
-<li><a href="/about" class="nav-link">About</a></li>
-<li><a href="/register" class="nav-link">Register</a></li>
+<li><a href="#about-section" class="nav-link">About</a></li>
 <li><a href="/contact" class="nav-link">Contact us</a></li>
+
+
+@guest
+
+<li><a href="/register" class="nav-link">Register</a></li>
 <li><a href="/login" class="nav-link">Login</a></li>
-<li><a href="/login" class="nav-link">Logout</a></li>
+@else
+<li><a href="/logout" class="nav-link">Logout</a></li>
+@endguest
 </ul>
 </nav>
 </div>
@@ -61,7 +67,6 @@
 <div class="col-md-6 mt-lg-5 text-center">
 <h1 class="text-shadow">Buy &amp; Sell Property Here</h1>
 <p class="mb-5 text-shadow">buy your dream house</p>
-<p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">Get Started</a></p>
 </div>
 </div>
 </div>
@@ -72,7 +77,6 @@
 <div class="col-md-6 mt-lg-5 text-center">
 <h1 class="text-shadow">Find Your Perfect Property For Your Home</h1>
 <p class="mb-5 text-shadow">make your dram home</p>
-<p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">Get Started</a></p>
 </div>
 </div>
 </div>
@@ -157,69 +161,7 @@
 </div>
 </div>
 </div>
-<section class="site-section" id="agents-section">
-<div class="container">
-<div class="row mb-5">
-<div class="col-md-7 text-left">
-<h2 class="section-title mb-3">Real Estate Agents</h2>
-<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="team-member">
-<figure>
-<ul class="social">
-<li><a href="#"><span class="icon-facebook"></span></a></li>
-<li><a href="#"><span class="icon-twitter"></span></a></li>
-<li><a href="#"><span class="icon-linkedin"></span></a></li>
-<li><a href="#"><span class="icon-instagram"></span></a></li>
-</ul>
-<img src="assets/images/person_1.jpg" alt="Image" class="img-fluid">
-</figure>
-<div class="p-3 bg-primary">
-<h3 class="mb-2">Allison Holmes</h3>
-<span class="position">Real Estate Agent</span>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="team-member">
-<figure>
-<ul class="social">
-<li><a href="#"><span class="icon-facebook"></span></a></li>
-<li><a href="#"><span class="icon-twitter"></span></a></li>
-<li><a href="#"><span class="icon-linkedin"></span></a></li>
-<li><a href="#"><span class="icon-instagram"></span></a></li>
-</ul>
-<img src="assets/images/person_2.jpg" alt="Image" class="img-fluid">
-</figure>
-<div class="p-3 bg-primary">
-<h3 class="mb-2">Dave Simpson</h3>
-<span class="position">Real Estate Agent</span>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="team-member">
-<figure>
-<ul class="social">
-<li><a href="#"><span class="icon-facebook"></span></a></li>
-<li><a href="#"><span class="icon-twitter"></span></a></li>
-<li><a href="#"><span class="icon-linkedin"></span></a></li>
-<li><a href="#"><span class="icon-instagram"></span></a></li>
-</ul>
-<img src="assets/images/person_3.jpg" alt="Image" class="img-fluid">
-</figure>
-<div class="p-3 bg-primary">
-<h3 class="mb-2">Ben Thompson</h3>
-<span class="position">Real Estate Agent</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+
 <section class="py-5 bg-primary site-section how-it-works" id="howitworks-section">
 <div class="container">
 <div class="row mb-5 justify-content-center">
@@ -352,164 +294,9 @@
 </div>
 </div>
 </section>
-<section class="site-section testimonial-wrap" id="testimonials-section">
-<div class="container">
-<div class="row mb-5">
-<div class="col-12 text-center">
-<h2 class="section-title mb-3">Testimonials<h2>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6 mb-4">
-<div class="ftco-testimonial-1">
-<div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-<img src="assets/images/person_1.jpg" alt="Image" class="img-fluid mr-3">
-<div>
-<h3>Allison Holmes</h3>
-<span>Customer</span>
-</div>
-</div>
-<div>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 mb-4">
-<div class="ftco-testimonial-1">
-<div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-<img src="assets/images/person_2.jpg" alt="Image" class="img-fluid mr-3">
-<div>
-<h3>James Phelps</h3>
-<span>Customer</span>
-</div>
-</div>
-<div>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 mb-4">
-<div class="ftco-testimonial-1">
-<div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-<img src="assets/images/person_3.jpg" alt="Image" class="img-fluid mr-3">
-<div>
-<h3>Nestor Helsin</h3>
-<span>Customer</span>
-</div>
-</div>
-<div>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 mb-4">
-<div class="ftco-testimonial-1">
-<div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-<img src="assets/images/person_1.jpg" alt="Image" class="img-fluid mr-3">
-<div>
-<h3>Allison Holmes</h3>
-<span>Customer</span>
-</div>
-</div>
-<div>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="site-section" id="news-section">
-<div class="container">
-<div class="row mb-5">
-<div class="col-12 text-center">
-<h2 class="section-title mb-3">News &amp; Events</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-<div class="h-entry">
-<a href="single.html"><img src="assets/images/img_1.jpg" alt="Image" class="img-fluid"></a>
-<h2 class="font-size-regular"><a href="single.html" class="text-dark">Popular Real Estate Properties for 2019</a></h2>
-<div class="meta mb-4">Allison Holmes <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="single.html">News</a></div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-<div class="h-entry">
-<a href="single.html"><img src="assets/images/img_2.jpg" alt="Image" class="img-fluid"></a>
-<h2 class="font-size-regular"><a href="single.html" class="text-dark">Popular Real Estate Properties for 2019</a></h2>
-<div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="single.html">News</a></div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-<div class="h-entry">
-<a href="single.html"><img src="assets/images/img_3.jpg" alt="Image" class="img-fluid"></a>
-<h2 class="font-size-regular"><a href="single.html" class="text-dark">Popular Real Estate Properties for 2019</a></h2>
-<div class="meta mb-4">Allison Holmes <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="single.html">News</a></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="site-section bg-light bg-image" id="contact-section">
-<div class="container">
-<div class="row mb-5">
-<div class="col-12 text-center">
-<h2 class="section-title mb-3">Contact Us</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-md-7 mb-5">
-<form action="#" class="p-5 bg-white">
-<h2 class="h4 text-black mb-5">Get In Touch</h2>
-<div class="row form-group">
-<div class="col-md-6 mb-3 mb-md-0">
-<label class="text-black" for="fname">First Name</label>
-<input type="text" id="fname" class="form-control">
-</div>
-<div class="col-md-6">
-<label class="text-black" for="lname">Last Name</label>
-<input type="text" id="lname" class="form-control">
-</div>
-</div>
-<div class="row form-group">
-<div class="col-md-12">
-<label class="text-black" for="email">Email</label>
-<input type="email" id="email" class="form-control">
-</div>
-</div>
-<div class="row form-group">
-<div class="col-md-12">
-<label class="text-black" for="subject">Subject</label>
-<input type="subject" id="subject" class="form-control">
-</div>
-</div>
-<div class="row form-group">
-<div class="col-md-12">
-<label class="text-black" for="message">Message</label>
-<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
-</div>
-</div>
-<div class="row form-group">
-<div class="col-md-12">
-<input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
-</div>
-</div>
-</form>
-</div>
-<div class="col-md-5">
-<div class="p-4 mb-3 bg-white">
-<p class="mb-0 font-weight-bold">Address</p>
-<p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
-<p class="mb-0 font-weight-bold">Phone</p>
-<p class="mb-4"><a href="#">+1 232 3235 324</a></p>
-<p class="mb-0 font-weight-bold">Email Address</p>
-<p class="mb-0"><a href="#"><span class="__cf_email__" data-cfemail="d7aeb8a2a5b2bab6bebb97b3b8bab6beb9f9b4b8ba">[email&#160;protected]</span></a></p>
-</div>
-</div>
-</div>
-</div>
-</section>
+
+
+
 <footer class="site-footer">
 <div class="container">
 <div class="row">
@@ -573,7 +360,7 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/jquery.countdown.min.js"></script>
 <script src="assets/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/jquery.easing.1.3.js"></script>assets/
+<script src="assets/js/jquery.easing.1.3.js"></script>
 <script src="assets/js/aos.js"></script>
 <script src="assets/js/jquery.fancybox.min.js"></script>
 <script src="assets/js/jquery.sticky.js"></script>
