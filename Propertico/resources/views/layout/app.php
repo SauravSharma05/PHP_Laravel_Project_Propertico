@@ -3,21 +3,21 @@
 
 
 <head>
-<title>Warehouse &mdash; Website Template by Colorlib</title>
+<title>PROPERTICO</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900|Oswald:300,400,700" rel="stylesheet">
-<link rel="stylesheet" href="fonts/icomoon/style.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery-ui.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-<link rel="stylesheet" href="css/aos.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/jquery-ui.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="assets/css/aos.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <script nonce="ea3f7842-b7c0-4573-94b7-fed32e47a75f">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return async function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="../../cdn-cgi/zaraz/sd0d9.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 <div class="site-wrap">
@@ -38,13 +38,14 @@
 <div class="col-12 col-md-10 d-none d-xl-block">
 <nav class="site-navigation position-relative text-right" role="navigation">
 <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-<li><a href="#home-section" class="nav-link">Home</a></li>
-<li><a href="#properties-section" class="nav-link">Properties</a></li>
-<li><a href="#agents-section" class="nav-link">Agents</a></li>
-<li><a href="#about-section" class="nav-link">About</a></li>
-<li><a href="#news-section" class="nav-link">Login</a></li>
-<li><a href="#contact-section" class="nav-link">Register</a></li>
-<li><a href="#contact-section" class="nav-link">Contact us</a></li>
+<li><a href="/home" class="nav-link">Home</a></li>
+<li><a href="/properties" class="nav-link">Properties</a></li>
+<li><a href="/agents" class="nav-link">Agents</a></li>
+<li><a href="/about" class="nav-link">About</a></li>
+<li><a href="/register" class="nav-link">Register</a></li>
+<li><a href="/contact" class="nav-link">Contact us</a></li>
+<li><a href="/login" class="nav-link">Login</a></li>
+<li><a href="/login" class="nav-link">Logout</a></li>
 </ul>
 </nav>
 </div>
@@ -174,7 +175,7 @@
 <li><a href="#"><span class="icon-linkedin"></span></a></li>
 <li><a href="#"><span class="icon-instagram"></span></a></li>
 </ul>
-<img src="images/person_1.jpg" alt="Image" class="img-fluid">
+<img src="assets/images/person_1.jpg" alt="Image" class="img-fluid">
 </figure>
 <div class="p-3 bg-primary">
 <h3 class="mb-2">Allison Holmes</h3>
@@ -191,7 +192,7 @@
 <li><a href="#"><span class="icon-linkedin"></span></a></li>
 <li><a href="#"><span class="icon-instagram"></span></a></li>
 </ul>
-<img src="images/person_2.jpg" alt="Image" class="img-fluid">
+<img src="assets/images/person_2.jpg" alt="Image" class="img-fluid">
 </figure>
 <div class="p-3 bg-primary">
 <h3 class="mb-2">Dave Simpson</h3>
@@ -208,7 +209,7 @@
 <li><a href="#"><span class="icon-linkedin"></span></a></li>
 <li><a href="#"><span class="icon-instagram"></span></a></li>
 </ul>
-<img src="images/person_3.jpg" alt="Image" class="img-fluid">
+<img src="assets/images/person_3.jpg" alt="Image" class="img-fluid">
 </figure>
 <div class="p-3 bg-primary">
 <h3 class="mb-2">Ben Thompson</h3>
@@ -259,9 +260,9 @@
 <div class="row large-gutters">
 <div class="col-lg-6 mb-5">
 <div class="owl-carousel slide-one-item with-dots">
-<div><img src="images/img_1.jpg" alt="Image" class="img-fluid"></div>
-<div><img src="images/img_2.jpg" alt="Image" class="img-fluid"></div>
-<div><img src="images/img_3.jpg" alt="Image" class="img-fluid"></div>
+<div><img src="assets/images/img_1.jpg" alt="Image" class="img-fluid"></div>
+<div><img src="assets/images/img_2.jpg" alt="Image" class="img-fluid"></div>
+<div><img src="assets/images/img_3.jpg" alt="Image" class="img-fluid"></div>
 </div>
 </div>
 <div class="col-lg-6 ml-auto">
@@ -362,7 +363,7 @@
 <div class="col-md-6 mb-4">
 <div class="ftco-testimonial-1">
 <div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-<img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
+<img src="assets/images/person_1.jpg" alt="Image" class="img-fluid mr-3">
 <div>
 <h3>Allison Holmes</h3>
 <span>Customer</span>
@@ -376,7 +377,7 @@
 <div class="col-md-6 mb-4">
 <div class="ftco-testimonial-1">
 <div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-<img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
+<img src="assets/images/person_2.jpg" alt="Image" class="img-fluid mr-3">
 <div>
 <h3>James Phelps</h3>
 <span>Customer</span>
@@ -390,7 +391,7 @@
 <div class="col-md-6 mb-4">
 <div class="ftco-testimonial-1">
 <div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-<img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">
+<img src="assets/images/person_3.jpg" alt="Image" class="img-fluid mr-3">
 <div>
 <h3>Nestor Helsin</h3>
 <span>Customer</span>
@@ -404,7 +405,7 @@
 <div class="col-md-6 mb-4">
 <div class="ftco-testimonial-1">
 <div class="ftco-testimonial-vcard d-flex align-items-center mb-4">
-<img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
+<img src="assets/images/person_1.jpg" alt="Image" class="img-fluid mr-3">
 <div>
 <h3>Allison Holmes</h3>
 <span>Customer</span>
@@ -428,21 +429,21 @@
 <div class="row">
 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
 <div class="h-entry">
-<a href="single.html"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+<a href="single.html"><img src="assets/images/img_1.jpg" alt="Image" class="img-fluid"></a>
 <h2 class="font-size-regular"><a href="single.html" class="text-dark">Popular Real Estate Properties for 2019</a></h2>
 <div class="meta mb-4">Allison Holmes <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="single.html">News</a></div>
 </div>
 </div>
 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
 <div class="h-entry">
-<a href="single.html"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+<a href="single.html"><img src="assets/images/img_2.jpg" alt="Image" class="img-fluid"></a>
 <h2 class="font-size-regular"><a href="single.html" class="text-dark">Popular Real Estate Properties for 2019</a></h2>
 <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="single.html">News</a></div>
 </div>
 </div>
 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
 <div class="h-entry">
-<a href="single.html"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+<a href="single.html"><img src="assets/images/img_3.jpg" alt="Image" class="img-fluid"></a>
 <h2 class="font-size-regular"><a href="single.html" class="text-dark">Popular Real Estate Properties for 2019</a></h2>
 <div class="meta mb-4">Allison Holmes <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="single.html">News</a></div>
 </div>
@@ -521,10 +522,10 @@
 <div class="col-md-3 mx-auto">
 <h2 class="footer-heading mb-4">Quick Links</h2>
 <ul class="list-unstyled">
-<li><a href="#">About Us</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Testimonials</a></li>
-<li><a href="#">Contact Us</a></li>
+<li><a href="/about">About Us</a></li>
+<li><a href="/home">Services</a></li>
+<li><a href="/home">Testimonials</a></li>
+<li><a href="/contact">Contact Us</a></li>
 </ul>
 </div>
 </div>
@@ -543,10 +544,10 @@
 </div>
 <div class>
 <h2 class="footer-heading mb-4">Follow Us</h2>
-<a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-<a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-<a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-<a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+<a href="/home" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+<a href="/home" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+<a href="/home" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+<a href="/home" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
 </div>
 </div>
 </div>
@@ -555,7 +556,7 @@
 <div class="border-top pt-5">
 <p class="copyright">
 
-Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved
 
 </p>
 </div>
@@ -563,20 +564,20 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 </div>
 </div>
 </footer>
-</div> 
+</div>
 <a href="#top" class="gototop"><span class="icon-angle-double-up"></span></a>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/bootstrap-datepicker.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/jquery.sticky.js"></script>
-<script src="js/main.js"></script>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.countdown.min.js"></script>
+<script src="assets/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>assets/
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/jquery.fancybox.min.js"></script>
+<script src="assets/js/jquery.sticky.js"></script>
+<script src="assets/js/main.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>
