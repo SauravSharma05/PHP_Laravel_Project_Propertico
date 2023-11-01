@@ -91,21 +91,21 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
                 <div class="ftco-media-1">
                     <div class="ftco-media-1-inner">
-                        <a href="" class="d-inline-block mb-4"><img src="{{$items->image}}" alt="FImageo" class="img-fluid"></a>
+                        <a href="" class="d-inline-block mb-4"><img src="/storage/{{$items->image}}" alt="FImageo" class="img-fluid"></a>
                         <div class="ftco-media-details">
                             <h3>{{$items->name}}</h3>
                             <h3>{{$items->description}}</h3>
                             <p>{{$items->location}}</p>
-                            <strong>Starting from : {{$items->price}}</strong>
+                            <strong>Starting from :{{$items->price}}</strong>
                             </div>
                             </div>
                             </div>
                             </div>
 
+
+                            </div>
+                            </div>
                             @endforeach
-
-                            </div>
-                            </div>
 
 <section class="py-5 bg-primary site-section how-it-works" id="howitworks-section">
 <div class="container">

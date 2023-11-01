@@ -41,8 +41,8 @@ class PropertyResource extends Resource
             ->columns([
                 TextColumn::make('name'),
                 TextColumn::make('price'),
-                TextColumn::make('quantity'),
                 ImageColumn::make('image'),
+                TextColumn::make('location'),
                 TextColumn::make('description')
             ])
             ->filters([
