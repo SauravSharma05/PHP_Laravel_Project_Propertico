@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Authcontroller;
+use App\Http\Controllers\Backend\Homecontroller as BackendHomecontroller;
 use App\Http\Controllers\Frontend\Homecontroller;
 use Illuminate\Support\Facades\Route;
 

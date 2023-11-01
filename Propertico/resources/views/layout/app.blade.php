@@ -84,83 +84,28 @@
 </div>
 </div>
 <div class="site-section" id="properties-section">
-<div class="container">
-<div class="row large-gutters">
-<div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-<div class="ftco-media-1">
-<div class="ftco-media-1-inner">
-<a href="property-single.html" class="d-inline-block mb-4"><img src="assets/images/property_1.jpg" alt="FImageo" class="img-fluid"></a>
-<div class="ftco-media-details">
-<h3>HD17 19 Utica Ave.</h3>
-<p>New York - USA</p>
-<strong>$20,000,000</strong>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-<div class="ftco-media-1">
-<div class="ftco-media-1-inner">
-<a href="property-single.html" class="d-inline-block mb-4"><img src="assets/images/property_2.jpg" alt="Image" class="img-fluid"></a>
-<div class="ftco-media-details">
-<h3>HD17 19 Utica Ave.</h3>
-<p>New York - USA</p>
-<strong>$20,000,000</strong>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-<div class="ftco-media-1">
-<div class="ftco-media-1-inner">
-<a href="property-single.html" class="d-inline-block mb-4"><img src="assets/images/property_3.jpg" alt="Image" class="img-fluid"></a>
-<div class="ftco-media-details">
-<h3>HD17 19 Utica Ave.</h3>
-<p>New York - USA</p>
-<strong>$20,000,000</strong>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-<div class="ftco-media-1">
-<div class="ftco-media-1-inner">
-<a href="property-single.html" class="d-inline-block mb-4"><img src="assets/images/property_1.jpg" alt="Image" class="img-fluid"></a>
-<div class="ftco-media-details">
-<h3>HD17 19 Utica Ave.</h3>
-<p>New York - USA</p>
-<strong>$20,000,000</strong>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-<div class="ftco-media-1">
-<div class="ftco-media-1-inner">
-<a href="property-single.html" class="d-inline-block mb-4"><img src="assets/images/property_2.jpg" alt="Image" class="img-fluid"></a>
-<div class="ftco-media-details">
-<h3>HD17 19 Utica Ave.</h3>
-<p>New York - USA</p>
-<strong>$20,000,000</strong>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
-<div class="ftco-media-1">
-<div class="ftco-media-1-inner">
-<a href="property-single.html" class="d-inline-block mb-4"><img src="assets/images/property_3.jpg" alt="Image" class="img-fluid"></a>
-<div class="ftco-media-details">
-<h3>HD17 19 Utica Ave.</h3>
-<p>New York - USA</p>
-<strong>$20,000,000</strong>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    @foreach ($property as $items)
+
+    <div class="container">
+        <div class="row large-gutters">
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 ">
+                <div class="ftco-media-1">
+                    <div class="ftco-media-1-inner">
+                        <a href="" class="d-inline-block mb-4"><img src="{{$items->image}}" alt="FImageo" class="img-fluid"></a>
+                        <div class="ftco-media-details">
+                            <h3>{{$items->name}}</h3>
+                            <h3>{{$items->description}}</h3>
+                            <p>{{$items->location}}</p>
+                            <strong>Starting from : {{$items->price}}</strong>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+
+                            @endforeach
+
+                            </div>
+                            </div>
 
 <section class="py-5 bg-primary site-section how-it-works" id="howitworks-section">
 <div class="container">
