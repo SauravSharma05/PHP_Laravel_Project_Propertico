@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Contact;
 use App\Models\Property;
 use Illuminate\Http\Request;
 
@@ -30,6 +31,19 @@ class Homecontroller extends Controller
     {
         return view('agents');
     }
+
+    public function contactus(Request $request)
+    {
+            $query = new Contact;
+            $query->fname = $request->fname;
+            $query->lname = $request->lname;
+            $query->message = $request->message;
+            $query->subject = $request->subject;
+            $query->email = $request->email;
+            $query->save();
+
+    }
+
 
 }
 

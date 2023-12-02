@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class Homecontroller extends Controller
 {
-   
+
     public function GetPropertyData()
     {
         // dd("inside funciton");
@@ -20,4 +20,6 @@ class Homecontroller extends Controller
 
         // dd($users);
     }
+
+    
 }

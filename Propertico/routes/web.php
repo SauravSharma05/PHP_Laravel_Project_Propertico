@@ -30,3 +30,5 @@ Route::post('/login',[Authcontroller::class,'validate_login']);
 
 Route::get('/logout',[AuthController::class,'logout']);
 
+Route::post('/contact',[Homecontroller::class,'contactus']);
+
