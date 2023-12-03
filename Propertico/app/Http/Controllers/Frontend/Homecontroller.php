@@ -10,7 +10,6 @@ use Illuminate\Http\Request;
 class Homecontroller extends Controller
 {
 
-
     public function index()
     {
         //Eloquent queries
@@ -31,6 +30,7 @@ class Homecontroller extends Controller
     {
         return view('agents');
     }
+  
 
     public function contactus(Request $request)
     {

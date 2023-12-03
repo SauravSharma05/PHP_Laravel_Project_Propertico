@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admincontroller;
 use App\Http\Controllers\Authcontroller;
 use App\Http\Controllers\Backend\Homecontroller as BackendHomecontroller;
 use App\Http\Controllers\Frontend\Homecontroller;
@@ -30,5 +31,8 @@ Route::post('/login',[Authcontroller::class,'validate_login']);
 
 Route::get('/logout',[AuthController::class,'logout']);
 
+
 Route::post('/contact',[Homecontroller::class,'contactus']);
 
+Route::get('/dashh',[Admincontroller::class,'dashh']);
+Route::get('/userlist',[Admincontroller::class,'userlist']);
