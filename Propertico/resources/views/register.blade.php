@@ -50,7 +50,7 @@ Register Account
 </form>
 <hr>
 <div class="text-center">
-<a class="small" href="/login">Already have an account? Login!</a>
+<a class="small" href="/login">Already have an account? Login here</a>
 </div>
 </div>
 </div>
