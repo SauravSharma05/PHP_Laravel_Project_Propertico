@@ -31,7 +31,7 @@
 <div class="row mb-5">
 <div class="col-md-7 text-left">
 <h2 class="section-title mb-3">Real Estate Agents</h2>
-<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
+<p class="lead">agents page</p>
 </div>
 </div>
 <div class="row">
